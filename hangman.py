@@ -1,19 +1,49 @@
 import time
 import math
 import random
+import os
 
-#copyright gereserveerd
+#Gemaakt door Jurre
+
+#Copyright reserved
+
+#versie 0.1
 
 woorden = ["installering", "kwadraat", "zeeslag", "pantservoertuig", "laptop", "wiskunde", "banaan", "drol", "computer", "muismat", "bureaublad", "kabouter", "wapenstilstand", "terrorist", "aanslag", "waterstof", "animatie"]
 
-print("welkom bij...")
-print("  ___    __    __    ___   ____  ____")
-print(" / __)  /__\  (  )  / __) (_  _)( ___)")
-print("( (_-. /(__)\  )(__( (_-..-_)(   )__)")
-print(" \___/(__)(__)(____)\___/\____) (____)")
+
+for x in range(0, 3):
+    print("  ___    __    __    ___   ____  ____")
+    print(" / __)  /__\  (  )  / __) (_  _)( ___)")
+    print("( (_-. /(__)\  )(__( (_-..-_)(   )__)")
+    print(" \___/(__)(__)(____)\___/\____) (____)")
+    print("")
+    time.sleep(0.5)
+    os.system('cls')
+    time.sleep(0.5)
+
 print("")
+print("Regels:")
+print("")
+time.sleep(1)
+print(" • Het doel van het spel is om het juiste woord te raden.")
+time.sleep(1)
+print(" • Elke beurt moet je steeds een letter opgeven, totdat het woord volledig is.  ")
+time.sleep(1)
+print(" • Maar... na 15 keer raden, is het spel over. ")
+time.sleep(1)
+print(" • Als je het woord denkt te weten, type '?'. ")
+time.sleep(3)
+print("")
+print("Klik op enter om het spel te starten.")
+
+Start = input("")
+
+if Start == "":
+    print("")
     
 while True:
+    os.system('cls')
     print("")
     time.sleep(1)
     woord = random.choice(woorden)
