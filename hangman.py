@@ -7,27 +7,27 @@ import os
 
 #Copyright reserved
 
-#versie 0.1
+#versie 1 (ALPHA)
 
 woorden = ["installering", "kwadraat", "zeeslag", "pantservoertuig", "laptop", "wiskunde", "banaan", "drol", "computer", "muismat", "bureaublad", "kabouter", "wapenstilstand", "terrorist", "aanslag", "waterstof", "animatie"]
 compliment = ["Topper!", "Goed!", "Juist!", "Dat is correct!", "Helemaal top!", "Perfect!", "Mooizo!!", "Goedzo!", "Goed!!!!!", "Helemaal correct!", "Top!", "Scheepsrecht!"]
 vernedering = ["Helaas...", "Onjuist!", "Fout!", "Geef het op!", "Jammer...", "Fout en niet goed!", "Slecht!", "Fout...", "Niet goed!", "Niet correct!", "Fout geraden!"]
 
 os.system('cls')
-#time.sleep(1)
-#print("")
-#print("Regels:")
-#print("")
-#time.sleep(1)
-#print(" • Het doel van het spel is om het juiste woord te raden.")
-#time.sleep(1)
-#print(" • Elke beurt moet je steeds een letter opgeven, totdat het woord volledig is.  ")
-#time.sleep(1)
-#print(" • Maar... na 10 keer raden, is het spel over. ")
-#time.sleep(1)
-#print(" • Als je het woord denkt te weten, type '?'. ")
-#time.sleep(3)
-#print("")
+time.sleep(1)
+print("")
+print("Regels:")
+print("")
+time.sleep(1)
+print(" • Het doel van het spel is om het juiste woord te raden.")
+time.sleep(1)
+print(" • Elke beurt moet je steeds een letter opgeven, totdat het woord volledig is.  ")
+time.sleep(1)
+print(" • Maar... na 5 keer raden, is het spel over. ")
+time.sleep(1)
+print(" • Als je het woord denkt te weten, type '?'. ")
+time.sleep(3)
+print("")
 print("Klik op enter om het spel te starten.")
 
 Start = input("")
@@ -61,6 +61,7 @@ while True:
     fout = ""
     goed = ""
     perfect = 0
+    foutenteller = 0
     while True:
         correct = random.choice(compliment)
         onjuist = random.choice(vernedering)
@@ -73,10 +74,68 @@ while True:
         print(" \____/\_| |_/\_____/ \____/\____/ \____/")
         print("")
         print("")
+        if foutenteller == 0:
+            print("")
+            print("")
+            print("")
+            print("")
+            print("")
+            print("")
+            print("")
+            print(" ___")
+        if foutenteller == 1:
+            print("")
+            print("")
+            print("")
+            print("")
+            print("")
+            print(" |")
+            print(" |")
+            print(" |___")
+        if foutenteller == 2:
+            print("")
+            print("")
+            print(" |")
+            print(" |")
+            print(" |")
+            print(" |")
+            print(" |")
+            print(" |___")
+        if foutenteller == 3:
+            print(" _______")
+            print(" |/")
+            print(" |")
+            print(" |")
+            print(" |")
+            print(" |")
+            print(" |")
+            print(" |___")
+        if foutenteller == 4:
+            print(" _________")
+            print(" |/       |")
+            print(" |       ( )")
+            print(" |")
+            print(" |")
+            print(" |")
+            print(" |")
+            print(" |___")
+        if foutenteller == 5:
+            print(" _________")
+            print(" |/       |")
+            print(" |       ( )")
+            print(" |       -|-")
+            print(" |       | |")
+            print(" |")
+            print(" |")
+            print(" |___")
+                   
         print("")
         for i in range(letters):
             print(streepjes[i], end=" ")
         print("")
+        print("")
+        if foutenteller > 0:
+            print("Foutgeraden letters: " + fout)
         print("")
         print("Geef een letter.")
         print("")
@@ -99,16 +158,42 @@ while True:
                 print("")
                 reactie = input(" : ")
                 if reactie == woord:
-                    print("")
-                    time.sleep(1)
-                    print("Je hebt het woord goed :)")
-                    time.sleep(2)
+                    for i in range(5):
+                        time.sleep(0.2)
+                        os.system('cls')
+                        print(" _____  _____  _    _  _____  _   _  _   _  _____  _   _ ")
+                        print("|  __ \|  ___|| |  | ||  _  || \ | || \ | ||  ___|| \ | |")
+                        print("| |  \/| |__  | |  | || | | ||  \| ||  \| || |__  |  \| |")
+                        print("| | __ |  __| | |/\| || | | || . ` || . ` ||  __| | . ` |")
+                        print("| |_\ \| |___ \  /\  /\ \_/ /| |\  || |\  || |___ | |\  |")
+                        print(" \____/\____/  \/  \/  \___/ \_| \_/\_| \_/\____/ \_| \_/")
+                        print("")
+                        time.sleep(0.2)
+                        os.system('cls')
+                        print("")
+                        print("")
+                        print("")
+                        print("")
+                        print("")
+                        print("")
+                        print("")
                     os.system('cls')
-                    break
+                    print(" _____  _____  _    _  _____  _   _  _   _  _____  _   _ ")
+                    print("|  __ \|  ___|| |  | ||  _  || \ | || \ | ||  ___|| \ | |")
+                    print("| |  \/| |__  | |  | || | | ||  \| ||  \| || |__  |  \| |")
+                    print("| | __ |  __| | |/\| || | | || . ` || . ` ||  __| | . ` |")
+                    print("| |_\ \| |___ \  /\  /\ \_/ /| |\  || |\  || |___ | |\  |")
+                    print(" \____/\____/  \/  \/  \___/ \_| \_/\_| \_/\____/ \_| \_/")   
+                    print("")
+                    print("Klik op enter om opnieuw te spelen!")
+                    Nieuw = input("")
+                    if Nieuw == "":
+                        break
                 else:
                     print("")
                     time.sleep(1)
                     print("Helaas... je hebt het woord fout.")
+                    time.sleep(1)
     
             elif reactie.isalpha():
                 if not reactie in fout and not reactie in goed:
@@ -160,10 +245,9 @@ while True:
                         print(onjuist)
                         time.sleep(0.3)
                         fout = fout + reactie
-                        print("")
-                        print("De letters die je fout hebt geraden zijn: " + fout)
+                        
                         foutenteller = len(fout)
-                        if foutenteller > 9:
+                        if foutenteller > 4:
                             time.sleep(1)
                             for i in range(5):
                                 time.sleep(0.2)
@@ -177,14 +261,14 @@ while True:
                                 print("")
                                 time.sleep(0.2)
                                 os.system('cls')
-                                print("")
-                                print("")
-                                print("")
-                                print("")
-                                print("")
-                                print("")
-                                print("")
-                            time.sleep(1)
+                                print(" _________")
+                                print(" |/       |")
+                                print(" |       ( )")
+                                print(" |       -|-")
+                                print(" |       | |")
+                                print(" |")
+                                print(" |")
+                                print(" |___")
                             os.system('cls')
                             print(" _____   ___  ___  ___ _____   _____  _   _  _____ ______ ")
                             print("|  __ \ / _ \ |  \/  ||  ___| |  _  || | | ||  ___|| ___ ")
