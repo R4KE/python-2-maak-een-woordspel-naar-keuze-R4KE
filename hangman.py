@@ -10,19 +10,10 @@ import os
 #versie 0.1
 
 woorden = ["installering", "kwadraat", "zeeslag", "pantservoertuig", "laptop", "wiskunde", "banaan", "drol", "computer", "muismat", "bureaublad", "kabouter", "wapenstilstand", "terrorist", "aanslag", "waterstof", "animatie"]
-compliment = ["Topper!", "Goed!", "Juist!", "Dat is correct!", "Helemaal top!", "Perfect!", "Fout!!", "Goedzo!", "Goed!!!!!", "Helemaal correct!", "Top!", "Scheepsrecht!"]
+compliment = ["Topper!", "Goed!", "Juist!", "Dat is correct!", "Helemaal top!", "Perfect!", "Mooizo!!", "Goedzo!", "Goed!!!!!", "Helemaal correct!", "Top!", "Scheepsrecht!"]
 vernedering = ["Helaas...", "Onjuist!", "Fout!", "Geef het op!", "Jammer...", "Fout en niet goed!", "Slecht!", "Fout...", "Niet goed!", "Niet correct!", "Fout geraden!"]
 
-#os.system('cls')
-#for x in range(0, 3):
-#    os.system('cls')
-#    time.sleep(0.5)
-#    print("  ___    __    __    ___   ____  ____")
-#    print(" / __)  /__\  (  )  / __) (_  _)( ___)")
-#    print("( (_-. /(__)\  )(__( (_-..-_)(   )__)")
-#    print(" \___/(__)(__)(____)\___/\____) (____)")
-#    print("")
-#    time.sleep(0.4)
+os.system('cls')
 #time.sleep(1)
 #print("")
 #print("Regels:")
@@ -44,28 +35,42 @@ if Start == "":
     print("")
 
 while True:
+    os.system('cls')
+    for x in range(0, 5):
+        time.sleep(0.2)
+        os.system('cls')
+        print(" _____   ___   _      _____    ___  _____")
+        print("|  __ \ / _ \ | |    |  __ \  |_  ||  ___|")
+        print("| |  \// /_\ \| |    | |  \/    | || |__ ")
+        print("| | __ |  _  || |    | | __     | ||  __|")
+        print("| |_\ \| | | || |____| |_\ \/\__/ /| |___")
+        print(" \____/\_| |_/\_____/ \____/\____/ \____/")
+        print("")
+        time.sleep(0.2)
+        os.system('cls')
+        print("")
+        print("")
+        print("")
+        print("")
+        print("")
     woord = random.choice(woorden)
     letters = len(woord)
-    #for letters in woord:
-        #print(woord.replace(woord, "-"))
-        #test = woord.replace(woord, "-")
-        #print(test)
     streepjes = []
     for i in range(letters):
         streepjes.append("_")
-
     fout = ""
     goed = ""
     perfect = 0
-    
     while True:
         correct = random.choice(compliment)
         onjuist = random.choice(vernedering)
         os.system('cls')
-        print("  ___    __    __    ___   ____  ____")
-        print(" / __)  /__\  (  )  / __) (_  _)( ___)")
-        print("( (_-. /(__)\  )(__( (_-..-_)(   )__)")
-        print(" \___/(__)(__)(____)\___/\____) (____)")
+        print(" _____   ___   _      _____    ___  _____")
+        print("|  __ \ / _ \ | |    |  __ \  |_  ||  ___|")
+        print("| |  \// /_\ \| |    | |  \/    | || |__ ")
+        print("| | __ |  _  || |    | | __     | ||  __|")
+        print("| |_\ \| | | || |____| |_\ \/\__/ /| |___")
+        print(" \____/\_| |_/\_____/ \____/\____/ \____/")
         print("")
         print("")
         print("")
@@ -81,10 +86,12 @@ while True:
         if lettercount == 1:
             if "?" in reactie:
                 os.system('cls')
-                print("  ___    __    __    ___   ____  ____")
-                print(" / __)  /__\  (  )  / __) (_  _)( ___)")
-                print("( (_-. /(__)\  )(__( (_-..-_)(   )__)")
-                print(" \___/(__)(__)(____)\___/\____) (____)")
+                print(" _____   ___   _      _____    ___  _____")
+                print("|  __ \ / _ \ | |    |  __ \  |_  ||  ___|")
+                print("| |  \// /_\ \| |    | |  \/    | || |__ ")
+                print("| | __ |  _  || |    | | __     | ||  __|")
+                print("| |_\ \| | | || |____| |_\ \/\__/ /| |___")
+                print(" \____/\_| |_/\_____/ \____/\____/ \____/")
                 print("")
                 print("")
                 print("")
@@ -117,9 +124,37 @@ while True:
                         print("")
                         time.sleep(1)
                         if perfect == letters:
-                            print("Je hebt het woord geraden!")
-                            time.sleep(1)
-                            break
+                            for i in range(5):
+                                time.sleep(0.2)
+                                os.system('cls')
+                                print(" _____  _____  _    _  _____  _   _  _   _  _____  _   _ ")
+                                print("|  __ \|  ___|| |  | ||  _  || \ | || \ | ||  ___|| \ | |")
+                                print("| |  \/| |__  | |  | || | | ||  \| ||  \| || |__  |  \| |")
+                                print("| | __ |  __| | |/\| || | | || . ` || . ` ||  __| | . ` |")
+                                print("| |_\ \| |___ \  /\  /\ \_/ /| |\  || |\  || |___ | |\  |")
+                                print(" \____/\____/  \/  \/  \___/ \_| \_/\_| \_/\____/ \_| \_/")
+                                print("")
+                                time.sleep(0.2)
+                                os.system('cls')
+                                print("")
+                                print("")
+                                print("")
+                                print("")
+                                print("")
+                                print("")
+                                print("")
+                            os.system('cls')
+                            print(" _____  _____  _    _  _____  _   _  _   _  _____  _   _ ")
+                            print("|  __ \|  ___|| |  | ||  _  || \ | || \ | ||  ___|| \ | |")
+                            print("| |  \/| |__  | |  | || | | ||  \| ||  \| || |__  |  \| |")
+                            print("| | __ |  __| | |/\| || | | || . ` || . ` ||  __| | . ` |")
+                            print("| |_\ \| |___ \  /\  /\ \_/ /| |\  || |\  || |___ | |\  |")
+                            print(" \____/\____/  \/  \/  \___/ \_| \_/\_| \_/\____/ \_| \_/")   
+                            print("")
+                            print("Klik op enter om opnieuw te spelen!")
+                            Nieuw = input("")
+                            if Nieuw == "":
+                                break
                     else:
                         print("")
                         print(onjuist)
@@ -129,9 +164,39 @@ while True:
                         print("De letters die je fout hebt geraden zijn: " + fout)
                         foutenteller = len(fout)
                         if foutenteller > 9:
+                            time.sleep(1)
+                            for i in range(5):
+                                time.sleep(0.2)
+                                os.system('cls')
+                                print(" _____   ___  ___  ___ _____   _____  _   _  _____ ______ ")
+                                print("|  __ \ / _ \ |  \/  ||  ___| |  _  || | | ||  ___|| ___ ")
+                                print("| |  \// /_\ \| .  . || |__   | | | || | | || |__  | |_/ /")
+                                print("| | __ |  _  || |\/| ||  __|  | | | || | | ||  __| |    / ")
+                                print("| |_\ \| | | || |  | || |___  \ \_/ /\ \_/ /| |___ | |\ \ ")
+                                print(" \____/\_| |_/\_|  |_/\____/   \___/  \___/ \____/ \_| \_|")
+                                print("")
+                                time.sleep(0.2)
+                                os.system('cls')
+                                print("")
+                                print("")
+                                print("")
+                                print("")
+                                print("")
+                                print("")
+                                print("")
+                            time.sleep(1)
+                            os.system('cls')
+                            print(" _____   ___  ___  ___ _____   _____  _   _  _____ ______ ")
+                            print("|  __ \ / _ \ |  \/  ||  ___| |  _  || | | ||  ___|| ___ ")
+                            print("| |  \// /_\ \| .  . || |__   | | | || | | || |__  | |_/ /")
+                            print("| | __ |  _  || |\/| ||  __|  | | | || | | ||  __| |    / ")
+                            print("| |_\ \| | | || |  | || |___  \ \_/ /\ \_/ /| |___ | |\ \ ")
+                            print(" \____/\_| |_/\_|  |_/\____/   \___/  \___/ \____/ \_| \_|")
                             print("")
-                            print("Helaas... je 10 beurten zijn over, je hebt verloren.")
-                            time.sleep(3)
+                            print("Klik op enter om het opnieuw te proberen.")
+                            Nieuw = input("")
+                            if Nieuw == "":
+                                break
                         time.sleep(2)
                 else:
                     print("")
