@@ -4,15 +4,16 @@ import random
 import os
 
 #Gemaakt door Jurre
-
 #Copyright reserved
-
 #versie 1.1 (ALPHA)
 
+
+#List met woorden, goedmeldingen en foutmeldingen.
 woorden = ["telefoon", "koolstofdioxide", "hexadecimaal",  "installering", "kwadraat", "zeeslag", "pantservoertuig", "laptop", "wiskunde", "banaan", "drol", "computer", "muismat", "bureaublad", "kabouter", "wapenstilstand", "terrorist", "aanslag", "waterstof", "animatie"]
 compliment = ["Topper!", "Goed!", "Juist!", "Dat is correct!", "Helemaal top!", "Perfect!", "Mooizo!!", "Goedzo!", "Goed!!!!!", "Helemaal correct!", "Top!", "Scheepsrecht!"]
 vernedering = ["Helaas...", "Onjuist!", "Fout!", "JAMMER!", "Jammer...", "Fout en niet goed!", "Slecht!", "Fout...", "Niet goed!", "Niet correct!", "Fout geraden!"]
 
+#Begin scherm
 os.system('cls')
 time.sleep(0.3)
 print(" _____   ___   _      _____    ___  _____")
@@ -42,6 +43,8 @@ Start = input("")
 if Start == "":
     print("")
 
+
+#De game
 while True:
     os.system('cls')
     for x in range(0, 5):
@@ -150,6 +153,8 @@ while True:
         reactie = input(" : ")
         print("")
         lettercount = len(reactie)
+
+        #Ifjes die kijken naar wat je hebt ingevuld.
         if lettercount == 1:
             if "?" in reactie:
                 os.system('cls')
@@ -202,7 +207,7 @@ while True:
                     time.sleep(1)
                     print("Helaas... je hebt het woord fout.")
                     time.sleep(1)
-    
+            
             elif reactie.isalpha():
                 if not reactie in fout and not reactie in goed:
                     if (reactie) in woord:
