@@ -7,14 +7,22 @@ import os
 
 #Copyright reserved
 
-#versie 1 (ALPHA)
+#versie 1.1 (ALPHA)
 
-woorden = ["installering", "kwadraat", "zeeslag", "pantservoertuig", "laptop", "wiskunde", "banaan", "drol", "computer", "muismat", "bureaublad", "kabouter", "wapenstilstand", "terrorist", "aanslag", "waterstof", "animatie"]
+woorden = ["telefoon", "koolstofdioxide", "hexadecimaal",  "installering", "kwadraat", "zeeslag", "pantservoertuig", "laptop", "wiskunde", "banaan", "drol", "computer", "muismat", "bureaublad", "kabouter", "wapenstilstand", "terrorist", "aanslag", "waterstof", "animatie"]
 compliment = ["Topper!", "Goed!", "Juist!", "Dat is correct!", "Helemaal top!", "Perfect!", "Mooizo!!", "Goedzo!", "Goed!!!!!", "Helemaal correct!", "Top!", "Scheepsrecht!"]
-vernedering = ["Helaas...", "Onjuist!", "Fout!", "Geef het op!", "Jammer...", "Fout en niet goed!", "Slecht!", "Fout...", "Niet goed!", "Niet correct!", "Fout geraden!"]
+vernedering = ["Helaas...", "Onjuist!", "Fout!", "JAMMER!", "Jammer...", "Fout en niet goed!", "Slecht!", "Fout...", "Niet goed!", "Niet correct!", "Fout geraden!"]
 
 os.system('cls')
-time.sleep(1)
+time.sleep(0.3)
+print(" _____   ___   _      _____    ___  _____")
+print("|  __ \ / _ \ | |    |  __ \  |_  ||  ___|")
+print("| |  \// /_\ \| |    | |  \/    | || |__ ")
+print("| | __ |  _  || |    | | __     | ||  __|")
+print("| |_\ \| | | || |____| |_\ \/\__/ /| |___")
+print(" \____/\_| |_/\_____/ \____/\____/ \____/")
+print("")
+time.sleep(0.3)
 print("")
 print("Regels:")
 print("")
@@ -276,6 +284,10 @@ while True:
                             print("| | __ |  _  || |\/| ||  __|  | | | || | | ||  __| |    / ")
                             print("| |_\ \| | | || |  | || |___  \ \_/ /\ \_/ /| |___ | |\ \ ")
                             print(" \____/\_| |_/\_|  |_/\____/   \___/  \___/ \____/ \_| \_|")
+                            print("")
+                            time.sleep(0.2)
+                            print("Het geheime woord was: " + woord)
+                            time.sleep(1)
                             print("")
                             print("Klik op enter om het opnieuw te proberen.")
                             Nieuw = input("")
