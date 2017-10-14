@@ -9,7 +9,7 @@ import os
 
 
 #List met woorden, goedmeldingen en foutmeldingen.
-woorden = ["telefoon", "koolstofdioxide", "hexadecimaal",  "installering", "kwadraat", "zeeslag", "pantservoertuig", "laptop", "wiskunde", "banaan", "drol", "computer", "muismat", "bureaublad", "kabouter", "wapenstilstand", "terrorist", "aanslag", "waterstof", "animatie"]
+woorden = ["informaticadocent", "technologie", "automerk", "vrachtwagen", "fragment", "boot", "chloorfluorkoolwaterstofverbinding", "huiswerk", "zelfmoordterrorist", "vogel", "leven", "constructie", "toetsenbord", "god", "potlood", "moskee", "kerk", "kapmes", "afairre", "etiquette", "blokje", "religie", "frequentie", "zelfmoord", "audiofragment", "rechtbank", "papier", "wifi", "graden", "leraar", "muziek", "hoi", "beeldscherm", "geweer", "zwaard", "vuurbal", "armoede", "periferie", "soldaat", "galgje", "moordenaar", "verlamdheid", "winkeloverval", "bekeuring", "massamoord", "executie", "militair", "marine", "onthoofding", "marsmannetje", "universum", "vakgebied", "Geneesmiddelenvergoedingssysteem", "Medeverantwoordelijkheidsheffing", "accountantadministratieconsulent", "karaat", "telefoon", "koolstofdioxide", "hexadecimaal",  "installering", "kwadraat", "zeeslag", "pantservoertuig", "laptop", "wiskunde", "banaan", "drol", "computer", "muismat", "bureaublad", "kabouter", "wapenstilstand", "terrorist", "aanslag", "waterstof", "animatie"]
 compliment = ["Topper!", "Goed!", "Juist!", "Dat is correct!", "Helemaal top!", "Perfect!", "Mooizo!!", "Goedzo!", "Goed!!!!!", "Helemaal correct!", "Top!", "Scheepsrecht!"]
 vernedering = ["Helaas...", "Onjuist!", "Fout!", "JAMMER!", "Jammer...", "Fout en niet goed!", "Slecht!", "Fout...", "Niet goed!", "Niet correct!", "Fout geraden!"]
 
